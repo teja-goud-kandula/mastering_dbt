@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: dvdrental
+    description: This is a database for dvdrental a sample database
+    database: dvdrental
+    schema: public
+    tables:
+      - name: actor
+        description: contain information about the actors
+        # addd the freshness as a place holder only
+        # this is for reference purpose only
+        # loaded_at_field: _etl_loaded_at
+        # freshness:
+        #   warn_after: {count: 12, period: hour}
+        #   count means after 12 period is in hours, so it means warn if freshness is more than 12 hours
+        #   error_after: {count: 24, period: hour}
